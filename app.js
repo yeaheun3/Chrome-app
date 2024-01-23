@@ -4,3 +4,9 @@
 const title = document.getElementById("title");
 
 console.dir(title);
+
+/* 자바스크립트로 HTML의 title이란 항목 가져오기 */
+title.innerText = "Got you!";
+
+console.log(title.id);
+console.log(title.className);
