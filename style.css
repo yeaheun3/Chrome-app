@@ -10,3 +10,7 @@ h1 {
 .clicked {
   color: pink;
 }
+
+.sexy-font {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
