@@ -1,11 +1,17 @@
-const h1 = document.querySelector("div.hello h1");
+/* 
+HTML 안의 element를 JS로 가져오기. 하나의 element를 통해 검색하는 방법
+const loginForm = document.querySelector("#login-form");
+(= const loginform = document.getElementById("login-form");)
+const loginInput = loginForm.querySelector("input");
+const loginButton = loginForm.querySelector("button"); */
 
-console.dir(h1);
+// document를 통해 더 짧게 가져오기
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
 
-//animation을 위한 tool은 javaScript, style을 위한 tool은 CSS
-function handleTitleClick() {
-  // classList.toggle -> 요소의 class 목록에 class가 이미 존재하면 제거하고, 없으면 추가하는 method
-  h1.classList.toggle("clicked");
+function onLoginSubmit(event) {
+  event.preventDefault();
+  console.log(loginInput.value);
 }
 
-h1.addEventListener("click", handleTitleClick);
+loginForm.addEventListener("submit", onLoginSubmit);
