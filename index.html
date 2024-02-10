@@ -3,20 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
+    <script defer src="js/greetings.js"></script>
+    <script defer src="js/clock.js"></script>
   </head>
   <body>
     <form id="login-form" class="hidden">
       <input
         required
-        maxlength="15"
         type="text"
-        placeholder="Please write your name."
+        maxlength="15"
+        placeholder="Please write your name"
       />
       <button>Log in</button>
     </form>
+    <h2 id="clock">00:00</h2>
     <h1 id="greetings" class="hidden"></h1>
-    <script src="app.js"></script>
   </body>
 </html>
